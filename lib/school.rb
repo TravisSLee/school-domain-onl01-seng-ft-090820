@@ -4,6 +4,7 @@ class School
   
   def initialize(name)
     @name = name
+<<<<<<< HEAD
     @roster = {}
   end
   
@@ -26,3 +27,12 @@ class School
 end
 
   
+=======
+    @roster = {:grade => [:name => []]}
+  end
+  
+  def add_student(name, grade) 
+    self.roster[grade] << name
+  end
+end
+>>>>>>> 96c5ea2a5b839c3264a9a6ab45108408ec616ac5
